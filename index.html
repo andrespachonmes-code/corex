@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COREX | Tecnología de nivel superior</title>
+<meta name="description" content="Hardware, software, videojuegos y componentes electrónicos con carrito y seguimiento de pedidos.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080918'/%3E%3Cpath d='M18 18l28 28' stroke='%2322d3ee' stroke-width='9' stroke-linecap='round'/%3E%3Cpath d='M46 18L18 46' stroke='%23ec4899' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#vista">Saltar al contenido</a>
+<header class="barra">
+  <a href="#inicio" class="logo" aria-label="COREX, inicio">CORE<span class="x">X</span></a>
+  <nav class="menu" id="menu" aria-label="Principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#tienda">Tienda</a>
+    <a href="#blog">Blog</a>
+    <a href="#notificaciones">Notificaciones</a>
+    <a href="#servicios">Nuestros servicios</a>
+    <a href="#grupos">Grupos</a>
+  </nav>
+  <form id="buscador" class="buscador" role="search">
+    <label class="sr" for="bq">Buscar productos</label>
+    <input id="bq" name="q" type="search" placeholder="Buscar productos…" autocomplete="off">
+    <button type="submit">Buscar</button>
+  </form>
+  <div class="lado">
+    <span id="sesion"></span>
+    <a href="#carrito" class="btn-carrito">Carrito <span id="cuenta" class="cuenta">0</span></a>
+    <button type="button" id="menuBtn" class="menu-btn" data-action="menu" aria-expanded="false" aria-controls="menu">Menú</button>
+  </div>
+</header>
+<main id="vista" tabindex="-1"></main>
+<footer class="pie">
+  <div class="pie-in">
+    <a href="#inicio" class="logo" aria-label="COREX, inicio">CORE<span class="x">X</span></a>
+    <nav aria-label="Pie"><a href="#tienda">Tienda</a><a href="#rastrear">Rastrear pedido</a><a href="#contacto">Contacto</a><a href="#cuenta">Log In</a></nav>
+    <nav aria-label="Redes"><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a><a href="https://www.tiktok.com" target="_blank" rel="noopener">TikTok</a></nav>
+  </div>
+  <p class="copy">© 2026 COREX. Todos los derechos reservados.</p>
+</footer>
+<div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+<noscript><p style="padding:24px">COREX necesita JavaScript activado para funcionar.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>
